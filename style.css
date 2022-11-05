@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #333333;
+
+    user-select: none;
+}
+
+header {
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px 48px;
+gap: 8px;
+height: 72px;
+
+background: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), #131313;
+box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+font-size: 16px;
+color: #FFA100;
+}
+
+h1 {
+    font-weight: 400;
+font-size: 60px;
+line-height: 0px;
+color: #FFA100;
+}
+
+
+.enemy_info {
+    color: #CF6679;
+}
+
+.player_info {
+    color: #FFA100;
+}  
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 294px;
+    height: 452px;
+    padding: 24px 12px;
+    gap: 12px;
+    border-radius: 0%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), #131313;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0px 8px;
+    width: 278px;
+    height: 72px;
+    background: #121212;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 36px;
+    color: #FFA100;
+}
+
+.content {
+    display: flex;
+    gap: 2px;
+    width: 100%;
+    height: 100%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.numbers, .operator_up {
+    display: flex;
+    gap: 2px;
+  }
+  
+.number, .toggleMinus, .comma, .zero, .op {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+.number, .toggleMinus, .comma, .zero {
+    background: #515151;
+    color: #FFA100;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.op {
+    background: #121212;
+    color: #F7F7F7;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.clear {
+    color: #FFA100; 
+}
+
+.enter {
+    height: 146px;
+    background: #FFA100;
+    color: #131313;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+
+.op:hover, .toggleMinus:hover, .comma:hover, .zero:hover, .number:hover {
+    background-color: #646464;
+    transition: 0.2s;
+}
+
+.enter:hover {
+    background-color: #FFB401;
+    transition: 0.2s;
+}
+
+.op:active, .toggleMinus:active, .comma:active, .zero:active, .number:active {
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
